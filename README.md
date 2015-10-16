@@ -36,7 +36,7 @@ Attributes
 
 See attributes/default.rb for the install flavour:
 
-    default['kallisto']['version'] =  '0.42.3'
+    default['kallisto']['version'] =  'v0.42.3'
     
     
 License and Authors
