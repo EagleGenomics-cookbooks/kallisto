@@ -14,4 +14,4 @@ describe file(file_path) do
   it { should be_executable }
 end
 
-# TODO add Building an index, Quantification and Test results: https://pachterlab.github.io/kallisto/starting.html
+# TODO: add Building an index, Quantification and Test results: https://pachterlab.github.io/kallisto/starting.html
