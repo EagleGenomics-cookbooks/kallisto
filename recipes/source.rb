@@ -32,7 +32,7 @@ end
 # this symlinks every executable in the install subdirectory to the top of the directory tree
 # so that they are in the PATH
 execute "find #{node['kallisto']['dir']} -maxdepth 1 -name 'kallisto' -executable -type f -exec ln -sf {} . \\;" do
-  cwd node['kallisto']['install_path']  + '/bin'
+  cwd node['kallisto']['install_path'] + '/bin'
 end
 
 ##########################################################
