@@ -7,6 +7,10 @@ This file is used to list changes made in each version of the kallisto cookbook.
 -----
 - [Daniel Barrell] - Initial release of kallisto cookbook
 
+1.0.1
+-----
+- [Daniel Barrell] - Updated to kallisto 0.42.4
+
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
