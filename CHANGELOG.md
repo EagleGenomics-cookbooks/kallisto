@@ -11,6 +11,10 @@ This file is used to list changes made in each version of the kallisto cookbook.
 -----
 - [Daniel Barrell] - Updated to kallisto 0.42.4
 
+1.0.2
+-----
+- [Daniel Barrell] - Install to /usr/local. Force symbolic link.
+
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
 
