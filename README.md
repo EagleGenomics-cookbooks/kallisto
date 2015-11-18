@@ -14,6 +14,7 @@ Requirements
 
 Notes
 =====
+Kallisto uses a cmd line arg that requires a newer gcc version than the one that ships with cent-os 6.6 so we have stuck to the default binary install for now.
 
 Usage
 =====
