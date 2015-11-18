@@ -29,6 +29,31 @@ execute 'un-tar kallisto tar ball' do
   not_if { ::File.exist?("#{node['kallisto']['dir']}/kallisto") }
 end
 
+directory "#{node['kallisto']['dir']}/build" do
+  owner 'root'
+  group 'root'
+  mode '0755'
+  action :create
+end
+
+execute 'kallisto cmake' do
+  command 'cmake ../CMakeLists.txt'
+  cwd "#node['kallisto']['dir']/build"
+  not_if { ::File.exist?("#{node['kallisto']['dir']}/Makefile") }
+end
+
+execute 'kallisto make' do
+  command 'make ../'
+  cwd "#node['kallisto']['dir']/build"
+  not_if { ::File.exist?("#{node['kallisto']['dir']}/srcsdsds") } # TODO: finish this
+end
+
+execute 'kallisto make install' do
+  command 'make install ../'
+  cwd "#node['kallisto']['dir']/build"
+  not_if { ::File.exist?("#{node['kallisto']['install_dir']}/bin/kallisto") }
+end
+
 # this symlinks every executable in the install subdirectory to the top of the directory tree
 # so that they are in the PATH
 execute "find #{node['kallisto']['dir']} -maxdepth 1 -name 'kallisto' -executable -type f -exec ln -sf {} . \\;" do

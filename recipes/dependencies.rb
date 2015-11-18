@@ -6,7 +6,11 @@
 
 ##########################################################
 
-package ['tar'] do
+package ['epel-release'] do
+  action :install
+end
+
+package ['tar', 'make', 'cmake', 'zlib-devel', 'hdf5-devel'] do
   action :install
 end
 
