@@ -2,7 +2,7 @@
 # Cookbook Name:: kallisto
 # Recipe:: default
 #
-# Copyright (c) 2015 Eagle Genomics, All Rights Reserved.
+# Copyright (c) 2016 Eagle Genomics Ltd, Apache License, Version 2.0.
 
 # Note: centos 6.6 ships with gcc 4.4.7 but kallisto uses
 # a command line argument only supported in 4.7 onwards.
