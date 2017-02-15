@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/EagleGenomics-cookbooks/kallisto.svg?branch=master)](https://travis-ci.org/EagleGenomics-cookbooks/kallisto)
+
 Description
 ===========
 
@@ -24,7 +26,7 @@ Simply include the recipe wherever you would like it installed, such as a run li
 ## Testing
 To test the recipe we use chef test kitchen:
 
-kitchen converge default-centos66 
+kitchen converge default-centos66
 
 kitchen login default-centos66
 
@@ -38,8 +40,8 @@ Attributes
 See attributes/default.rb for the install flavour:
 
     default['kallisto']['version'] =  'v0.42.4'
-    
-    
+
+
 License and Authors
 ===================
 
@@ -49,7 +51,7 @@ License and Authors
 
 Copyright:: 2016, Eagle Genomics Ltd
 
-    
+
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
